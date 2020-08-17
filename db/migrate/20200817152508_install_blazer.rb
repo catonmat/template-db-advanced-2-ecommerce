@@ -1,11 +1,5 @@
 class InstallBlazer < ActiveRecord::Migration[6.0]
   def change
-    drop_table :blazer_queries
-    drop_table :blazer_audits
-    drop_table :blazer_dashboards
-    drop_table :blazer_dashboard_queries
-    drop_table :blazer_checks
-
     create_table :blazer_queries do |t|
       t.references :creator
       t.string :name
