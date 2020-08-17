@@ -28,7 +28,7 @@ data_sources:
       category: |
         SELECT DISTINCT category_name
         FROM products
-        ORDER_BY catgory_name ASC
+        ORDER_BY category_name ASC
 
     linked_columns:
       # user_id: "/admin/users/{value}"
